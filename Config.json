@@ -1,0 +1,21 @@
+{
+	"System":{
+		"N": 4,
+		"TotalSz": "All",
+		"SignTransform": false
+	},
+	"Test":{
+		"L_max": [10,10],
+		"L_min": [4,4],
+		"Epochs": 1e3,
+		"Steps" : 1,
+		"Precision": 8e-16,
+    "Repetitions": 5,
+    "Pre-Training": false
+	},
+	"Network":{
+		"Name": "TDT",
+		"Architecture":["Linear",0,"Tanh","Linear",1,"Triangle","Linear",0,"Tanh"],
+		"Loss": "Energy"
+	}
+}
